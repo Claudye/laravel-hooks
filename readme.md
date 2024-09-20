@@ -1,6 +1,5 @@
 # Laravel Hooks
- 
-[![License](https://img.shields.io/github/license/claudye/laravel-hooks.svg)](https://github.com/claudye/laravel-hooks/blob/main/LICENSE)
+  
 
 `Laravel Hooks` is a Laravel trait that allows you to register hooks (callbacks) before and after calling specified methods in a Laravel controllers. This helps you modify or extend the behavior of methods without altering their core logic.
 
@@ -65,15 +64,20 @@ class ExampleController extends Controller
     {
         // Register a before hook for the 'index' method
         $this->beforeCalling(['index', 'show'], function ($request,...$parameters, $method) {
+            
             $this->queryBuilder->filters($request->all()); 
+
             logger('Before calling index method');
         });
 
         // Register an after hook for the 'index' method
         $this->afterCalling(['index',"show","edit"], function ($request, $result,...$parameters, $method) {
+
             // Modify the result after the 'index' method is called
             logger('After calling index method');
+
             event(new SomeEvent($result))
+
             return response()->json([
                 'data'=>$result
             ]);
