@@ -1,0 +1,20 @@
+{
+  "name": "claudye/laravel-hooks",
+  "description": "A Laravel Trait for Hooking Before and After Method Calls",
+  "autoload": {
+    "psr-4": {
+      "LaravelHooks\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Fassinou Claude",
+      "email": "dev.claudy@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": ">=7.0 <12.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
