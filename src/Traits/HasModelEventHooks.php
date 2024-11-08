@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace LaravelHooks\Traits;
 
 trait HasModelEventHooks
 {

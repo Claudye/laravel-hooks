@@ -7,7 +7,7 @@
 Simply add the trait to your Eloquent model:
 
 ```php
-use App\Traits\HasModelEventHooks;
+use LaravelHooks\Traits;
 
 class User extends Model
 {

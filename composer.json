@@ -1,7 +1,7 @@
 {
   "name": "claudye/laravel-hooks",
   "description": "A Laravel Trait for Hooking Before and After Method Calls",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "autoload": {
     "psr-4": {
       "LaravelHooks\\": "src/"
